@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/calcDisplay"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:padding="12dp"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Grid -->
+    <GridLayout
+        android:columnCount="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true">
+
+        <!-- Numbers -->
+        <Button style="@style/CalcBtn" android:text="7" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="8" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="9" android:onClick="onCalcNumber"/>
+        <Button style="@style/OpBtn" android:text="/" android:onClick="onCalcOperator"/>
+
+        <Button style="@style/CalcBtn" android:text="4" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="5" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="6" android:onClick="onCalcNumber"/>
+        <Button style="@style/OpBtn" android:text="*" android:onClick="onCalcOperator"/>
+
+        <Button style="@style/CalcBtn" android:text="1" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="2" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="3" android:onClick="onCalcNumber"/>
+        <Button style="@style/OpBtn" android:text="-" android:onClick="onCalcOperator"/>
+
+        <Button style="@style/CalcBtn" android:text="0" android:onClick="onCalcNumber"/>
+        <Button style="@style/CalcBtn" android:text="." android:onClick="onCalcDecimal"/>
+        <Button style="@style/EqualBtn" android:text="=" android:onClick="onCalcEqual"/>
+        <Button style="@style/OpBtn" android:text="+" android:onClick="onCalcOperator"/>
+
+    </GridLayout>
+
+    <!-- Split -->
+    <EditText
+        android:id="@+id/peopleCount"
+        android:hint="Split (no. of people)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="#1E1E1E"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/splitButton"
+        android:text="Split"
+        style="@style/ActionBtn"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/resetButton"
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#333333"
+        android:background="#DDDDDD"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:text="Use"
+        android:onClick="useCalcResult"
+        style="@style/UseBtn"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

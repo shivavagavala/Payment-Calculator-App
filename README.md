@@ -1,6 +1,8 @@
 # 💸 Payment Calculator App
 
-A smart Android payment UI with an integrated calculator and split feature — inspired by modern fintech apps.
+A smart Android payment interface with an integrated calculator and split feature — designed to improve real-world payment usability.
+
+👉 Built using Kotlin & Android SDK with a focus on UX and real-world product thinking.
 
 ---
 

@@ -60,4 +60,4 @@ Inspired by modern UPI apps like Google Pay & PhonePe, with a focus on improving
 
 ## 👨‍💻 Author
 
-Your Name  
+Shiva Vagavala
